@@ -216,7 +216,7 @@ const TestimonialsSection = () => {
                             style={{
                               background: `linear-gradient(135deg, hsl(${t.accent} / 0.2), hsl(${t.accent} / 0.05))`,
                               color: `hsl(${t.accent})`,
-                              ringColor: `hsl(${t.accent} / 0.3)`,
+                              boxShadow: `0 0 0 2px hsl(${t.accent} / 0.3)`,
                             }}
                             initial={{ scale: 0.8 }}
                             animate={{ scale: 1 }}
@@ -284,7 +284,7 @@ const TestimonialsSection = () => {
                       style={{
                         background: i === current ? `hsl(${item.accent} / 0.15)` : "hsl(210,20%,15%)",
                         color: i === current ? `hsl(${item.accent})` : "hsl(210,10%,50%)",
-                        ringColor: i === current ? `hsl(${item.accent} / 0.4)` : undefined,
+                        boxShadow: i === current ? `0 0 0 2px hsl(${item.accent} / 0.4)` : undefined,
                       }}
                     >
                       {item.initials}
