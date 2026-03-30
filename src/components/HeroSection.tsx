@@ -140,7 +140,7 @@ const HeroSection = () => {
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
                     transition={{ delay: 1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                    style2={{ originX: 0 }}
+                    
                   />
                 </span>
                 <br />
