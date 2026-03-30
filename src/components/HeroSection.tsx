@@ -16,7 +16,7 @@ const HeroSection = () => {
   const sY = useSpring(mouseY, { stiffness: 40, damping: 25 });
   const spotlight = useTransform(
     [sX, sY],
-    ([x, y]) => `radial-gradient(900px circle at ${x}px ${y}px, hsl(122,39%,49%,0.05), transparent 60%)`
+    ([x, y]) => `radial-gradient(900px circle at ${x}px ${y}px, hsl(220, 80%, 50%,0.05), transparent 60%)`
   );
 
   const handleMouse = (e: React.MouseEvent) => {
@@ -40,7 +40,7 @@ const HeroSection = () => {
       {/* Subtle ambient light */}
       <div
         className="absolute top-[5%] right-[20%] w-[700px] h-[700px] rounded-full blur-[140px] opacity-20 pointer-events-none"
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%,0.25), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220, 80%, 50%,0.25), transparent 70%)" }}
       />
       <div
         className="absolute bottom-[10%] left-[10%] w-[400px] h-[400px] rounded-full blur-[100px] opacity-15 pointer-events-none"

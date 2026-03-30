@@ -209,7 +209,7 @@ const ContactSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.1 }}
-                  whileHover={{ x: 8, borderColor: "hsl(122, 39%, 49%, 0.3)" }}
+                  whileHover={{ x: 8, borderColor: "hsl(220, 80%, 50%, 0.3)" }}
                 >
                   {/* Hover glow */}
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -455,7 +455,7 @@ const ContactSection = () => {
                       <Button
                         type="submit"
                         disabled={loading}
-                        className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-emerald-500 hover:from-primary/90 hover:to-emerald-500/90 text-white shadow-[0_8px_32px_-4px_hsl(122,39%,49%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(122,39%,49%,0.5)] transition-all duration-300 border-0"
+                        className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-emerald-500 hover:from-primary/90 hover:to-emerald-500/90 text-white shadow-[0_8px_32px_-4px_hsl(220, 80%, 50%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(220, 80%, 50%,0.5)] transition-all duration-300 border-0"
                         size="lg"
                       >
                         {loading ? (

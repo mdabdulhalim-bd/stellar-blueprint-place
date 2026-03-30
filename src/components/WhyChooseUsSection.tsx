@@ -3,8 +3,8 @@ import { useRef, useEffect, useState } from "react";
 import { Shield, Zap, Users, Trophy, Clock, HeartHandshake, Check, X, Sparkles, ArrowRight, Star, Rocket, Target, Award } from "lucide-react";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Projects Delivered", icon: Trophy, accent: "122 39% 49%", description: "Across 30+ industries" },
-  { value: 99, suffix: "%", label: "Client Satisfaction", icon: HeartHandshake, accent: "145 63% 42%", description: "Based on post-project surveys" },
+  { value: 500, suffix: "+", label: "Projects Delivered", icon: Trophy, accent: "220, 80%, 50%", description: "Across 30+ industries" },
+  { value: 99, suffix: "%", label: "Client Satisfaction", icon: HeartHandshake, accent: "275, 65%, 50%", description: "Based on post-project surveys" },
   { value: 50, suffix: "+", label: "Team Experts", icon: Users, accent: "33 100% 50%", description: "Senior-level engineers" },
   { value: 24, suffix: "/7", label: "Support Available", icon: Clock, accent: "200 60% 50%", description: "Round-the-clock assistance" },
 ];
@@ -14,7 +14,7 @@ const advantages = [
     icon: Shield,
     title: "Enterprise Security",
     description: "SOC 2 compliant with end-to-end encryption, penetration testing, and regular third-party audits.",
-    accent: "122 39% 49%",
+    accent: "220, 80%, 50%",
     metric: "Zero Breaches",
     features: ["End-to-end encryption", "Regular audits", "GDPR compliant"],
   },
@@ -30,7 +30,7 @@ const advantages = [
     icon: Target,
     title: "Dedicated Team",
     description: "A senior team assigned exclusively to your project from discovery to launch and beyond.",
-    accent: "145 63% 42%",
+    accent: "275, 65%, 50%",
     metric: "1:1 Ratio",
     features: ["Dedicated PM", "Daily standups", "Direct access"],
   },
@@ -423,7 +423,7 @@ const WhyChooseUsSection = () => {
           className="absolute bottom-20 left-[40%] w-[350px] h-[350px] rounded-full opacity-[0.025]"
           animate={{ y: [-15, 15, -15], x: [-10, 10, -10] }}
           transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-          style={{ background: "radial-gradient(circle, hsl(145 63% 42%), transparent 65%)" }}
+          style={{ background: "radial-gradient(circle, hsl(275, 65%, 50%), transparent 65%)" }}
         />
       </motion.div>
 
