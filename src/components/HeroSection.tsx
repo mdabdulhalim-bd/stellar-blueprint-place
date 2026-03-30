@@ -28,9 +28,9 @@ const HeroSection = () => {
   const ease = [0.22, 1, 0.36, 1] as const;
 
   const badges = [
-    { icon: Award, label: "10+ Years Experience", accent: "from-amber-500/15 to-yellow-500/5", border: "border-amber-500/20", ic: "text-amber-400" },
-    { icon: BadgeDollarSign, label: "Money Back Guarantee", accent: "from-emerald-500/15 to-green-500/5", border: "border-emerald-500/20", ic: "text-emerald-400" },
-    { icon: ShieldCheck, label: "Quality Guarantee", accent: "from-sky-500/15 to-blue-500/5", border: "border-sky-500/20", ic: "text-sky-400" },
+    { icon: Award, label: "10+ Years Experience", accent: "from-orange-500/15 to-amber-500/5", border: "border-orange-500/20", ic: "text-orange-400" },
+    { icon: BadgeDollarSign, label: "Money Back Guarantee", accent: "from-blue-500/15 to-indigo-500/5", border: "border-blue-500/20", ic: "text-blue-400" },
+    { icon: ShieldCheck, label: "Quality Guarantee", accent: "from-purple-500/15 to-violet-500/5", border: "border-purple-500/20", ic: "text-purple-400" },
   ];
 
   return (
