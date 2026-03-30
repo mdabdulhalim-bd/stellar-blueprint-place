@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Globe, Smartphone } from "lucide-react";
+import { ArrowRight, Code2, Globe, Smartphone, Award, ShieldCheck, BadgeDollarSign } from "lucide-react";
 import { Button } from "./ui/button";
 
 const textVariants = {
@@ -111,6 +111,53 @@ const HeroSection = () => {
             <Button variant="heroOutline" size="lg" asChild>
               <a href="#portfolio">View Our Work</a>
             </Button>
+          </motion.div>
+
+          {/* Trust Badges */}
+          <motion.div
+            custom={4}
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mt-10"
+          >
+            {[
+              { icon: Award, label: "10+ Years Experience", color: "from-amber-500/20 to-yellow-500/10", border: "border-amber-500/30", iconColor: "text-amber-400", delay: 0 },
+              { icon: BadgeDollarSign, label: "Money Back Guarantee", color: "from-emerald-500/20 to-green-500/10", border: "border-emerald-500/30", iconColor: "text-emerald-400", delay: 0.15 },
+              { icon: ShieldCheck, label: "Quality Guarantee", color: "from-sky-500/20 to-blue-500/10", border: "border-sky-500/30", iconColor: "text-sky-400", delay: 0.3 },
+            ].map(({ icon: Icon, label, color, border, iconColor, delay }, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 1.8 + delay, duration: 0.6, type: "spring", stiffness: 150 }}
+                whileHover={{ scale: 1.08, y: -4 }}
+                whileTap={{ scale: 0.97 }}
+                className={`group relative cursor-default rounded-2xl border ${border} bg-gradient-to-br ${color} backdrop-blur-md px-5 py-3 flex items-center gap-3 overflow-hidden`}
+              >
+                {/* Animated spotlight on hover */}
+                <motion.div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background: "radial-gradient(circle at 50% 50%, hsl(var(--primary) / 0.15), transparent 70%)",
+                  }}
+                />
+
+                {/* Pulse ring behind icon */}
+                <span className="relative flex items-center justify-center">
+                  <motion.span
+                    className={`absolute inset-0 rounded-full ${iconColor} opacity-20`}
+                    animate={{ scale: [1, 1.8, 1], opacity: [0.3, 0, 0.3] }}
+                    transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.4 }}
+                  />
+                  <Icon className={`relative h-5 w-5 sm:h-6 sm:w-6 ${iconColor} drop-shadow-lg`} />
+                </span>
+
+                <span className="relative text-sm sm:text-base font-semibold text-primary-foreground/90 tracking-wide whitespace-nowrap">
+                  {label}
+                </span>
+              </motion.div>
+            ))}
           </motion.div>
 
           {/* Floating icons */}
