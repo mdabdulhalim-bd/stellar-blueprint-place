@@ -33,9 +33,9 @@ const plans = [
     annualPrice: "749",
     description: "For growing businesses that need a powerful digital platform.",
     popular: true,
-    accent: "from-primary/20 to-emerald-500/20",
-    iconBg: "from-primary/30 to-emerald-500/20",
-    glowColor: "hsla(122,39%,49%,0.2)",
+    accent: "from-primary/20 to-blue-500/20",
+    iconBg: "from-primary/30 to-blue-500/20",
+    glowColor: "hsla(220,80%,50%,0.2)",
     features: [
       { text: "Everything in Starter", included: true },
       { text: "Up to 15 pages", included: true },
@@ -152,7 +152,7 @@ const PricingCard = ({
               transition={{ delay: 0.5 }}
               className="relative"
             >
-              <div className="px-6 py-2 rounded-b-2xl text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-primary to-emerald-500 flex items-center gap-1.5 shadow-[0_4px_20px_-4px_hsl(122,39%,49%,0.5)]">
+              <div className="px-6 py-2 rounded-b-2xl text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-primary to-blue-500 flex items-center gap-1.5 shadow-[0_4px_20px_-4px_hsl(220,80%,50%,0.5)]">
                 <Sparkles className="w-3.5 h-3.5" />
                 Most Popular
               </div>
@@ -236,7 +236,7 @@ const PricingCard = ({
               size="lg"
               className={`w-full h-13 text-base font-bold rounded-xl border-0 transition-all duration-300 ${
                 plan.popular
-                  ? "bg-gradient-to-r from-primary to-emerald-500 text-white shadow-[0_8px_30px_-4px_hsl(122,39%,49%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(122,39%,49%,0.5)]"
+                  ? "bg-gradient-to-r from-primary to-blue-500 text-white shadow-[0_8px_30px_-4px_hsl(220,80%,50%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(220,80%,50%,0.5)]"
                   : "bg-white/[0.06] text-white hover:bg-white/[0.1] border border-white/[0.08]"
               }`}
               asChild
@@ -337,7 +337,7 @@ const PricingSection = () => {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 leading-tight">
             Investment That{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-primary via-emerald-400 to-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-blue-400 to-primary bg-clip-text text-transparent">
                 Pays Off
               </span>
               <motion.div
@@ -372,7 +372,7 @@ const PricingSection = () => {
             aria-label="Toggle annual pricing"
           >
             <motion.div
-              className="absolute top-1.5 left-1.5 h-6 w-6 rounded-full bg-gradient-to-r from-primary to-emerald-500 shadow-[0_0_12px_hsl(122,39%,49%,0.4)]"
+              className="absolute top-1.5 left-1.5 h-6 w-6 rounded-full bg-gradient-to-r from-primary to-blue-500 shadow-[0_0_12px_hsl(220,80%,50%,0.4)]"
               animate={{ x: isAnnual ? 28 : 0 }}
               transition={{ type: "spring", stiffness: 500, damping: 30 }}
             />
@@ -386,7 +386,7 @@ const PricingSection = () => {
                 initial={{ opacity: 0, scale: 0.8, x: -10 }}
                 animate={{ opacity: 1, scale: 1, x: 0 }}
                 exit={{ opacity: 0, scale: 0.8, x: -10 }}
-                className="inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-xs font-bold text-white bg-gradient-to-r from-primary to-emerald-500 shadow-[0_4px_16px_-4px_hsl(122,39%,49%,0.4)]"
+                className="inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-xs font-bold text-white bg-gradient-to-r from-primary to-blue-500 shadow-[0_4px_16px_-4px_hsl(220,80%,50%,0.4)]"
               >
                 <Sparkles className="h-3 w-3" />
                 SAVE 20%
