@@ -37,7 +37,7 @@ const services = [
     description: "Full-featured online stores with secure payments, inventory management, and optimized checkout.",
     tags: ["Shopify", "WooCommerce", "Custom"],
     number: "04",
-    accent: "33 100% 50%",
+    accent: "145 70% 45%",
     highlight: "+145% Revenue Avg",
   },
   {
@@ -46,7 +46,7 @@ const services = [
     description: "Data-driven strategies that boost visibility, drive organic traffic, and convert visitors.",
     tags: ["Technical SEO", "Analytics", "Growth"],
     number: "05",
-    accent: "200 60% 45%",
+    accent: "25 95% 55%",
     highlight: "Top 3 Rankings",
   },
   {
@@ -55,7 +55,7 @@ const services = [
     description: "Human-centered design balancing aesthetics with functionality to guide users effortlessly.",
     tags: ["Figma", "Prototyping", "Research"],
     number: "06",
-    accent: "280 60% 55%",
+    accent: "275 65% 50%",
     highlight: "Award Winning",
   },
 ];

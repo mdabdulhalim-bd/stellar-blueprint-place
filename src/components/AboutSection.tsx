@@ -15,19 +15,19 @@ const values = [
     icon: Users,
     title: "Client-Centric",
     description: "Your success is our success. We treat every project as a partnership, not a transaction.",
-    accent: "200 60% 45%",
+    accent: "25 95% 55%",
   },
   {
     icon: Award,
     title: "Excellence First",
     description: "We never cut corners. Every line of code, every pixel, every interaction is crafted with precision.",
-    accent: "33 100% 50%",
+    accent: "145 70% 45%",
   },
   {
     icon: Zap,
     title: "Innovation Led",
     description: "We stay ahead of the curve, adopting cutting-edge technologies to future-proof your products.",
-    accent: "280 60% 55%",
+    accent: "275 65% 50%",
   },
 ];
 

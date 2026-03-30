@@ -33,7 +33,7 @@ const steps = [
     title: "Launch & Support",
     description: "QA testing, deployment, performance monitoring, and ongoing maintenance to ensure long-term success.",
     details: ["Performance testing", "Cloud deployment", "24/7 monitoring", "Ongoing support"],
-    color: "33 100% 50%",
+    color: "145 70% 45%",
   },
 ];
 
