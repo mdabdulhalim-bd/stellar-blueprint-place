@@ -16,7 +16,7 @@ const HeroSection = () => {
   const sY = useSpring(mouseY, { stiffness: 40, damping: 25 });
   const spotlight = useTransform(
     [sX, sY],
-    ([x, y]) => `radial-gradient(900px circle at ${x}px ${y}px, hsl(122,39%,49%,0.05), transparent 60%)`
+    ([x, y]) => `radial-gradient(900px circle at ${x}px ${y}px, hsl(220, 80%, 50%,0.05), transparent 60%)`
   );
 
   const handleMouse = (e: React.MouseEvent) => {
@@ -28,9 +28,9 @@ const HeroSection = () => {
   const ease = [0.22, 1, 0.36, 1] as const;
 
   const badges = [
-    { icon: Award, label: "10+ Years Experience", accent: "from-amber-500/15 to-yellow-500/5", border: "border-amber-500/20", ic: "text-amber-400" },
-    { icon: BadgeDollarSign, label: "Money Back Guarantee", accent: "from-emerald-500/15 to-green-500/5", border: "border-emerald-500/20", ic: "text-emerald-400" },
-    { icon: ShieldCheck, label: "Quality Guarantee", accent: "from-sky-500/15 to-blue-500/5", border: "border-sky-500/20", ic: "text-sky-400" },
+    { icon: Award, label: "10+ Years Experience", accent: "from-orange-500/15 to-amber-500/5", border: "border-orange-500/20", ic: "text-orange-400" },
+    { icon: BadgeDollarSign, label: "Money Back Guarantee", accent: "from-blue-500/15 to-indigo-500/5", border: "border-blue-500/20", ic: "text-blue-400" },
+    { icon: ShieldCheck, label: "Quality Guarantee", accent: "from-purple-500/15 to-violet-500/5", border: "border-purple-500/20", ic: "text-purple-400" },
   ];
 
   return (
@@ -40,7 +40,7 @@ const HeroSection = () => {
       {/* Subtle ambient light */}
       <div
         className="absolute top-[5%] right-[20%] w-[700px] h-[700px] rounded-full blur-[140px] opacity-20 pointer-events-none"
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%,0.25), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220, 80%, 50%,0.25), transparent 70%)" }}
       />
       <div
         className="absolute bottom-[10%] left-[10%] w-[400px] h-[400px] rounded-full blur-[100px] opacity-15 pointer-events-none"

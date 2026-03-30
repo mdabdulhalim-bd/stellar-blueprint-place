@@ -9,25 +9,25 @@ const values = [
     icon: Target,
     title: "Mission-Driven",
     description: "We build technology that solves real problems and creates measurable impact for your business.",
-    accent: "122 39% 49%",
+    accent: "220, 80%, 50%",
   },
   {
     icon: Users,
     title: "Client-Centric",
     description: "Your success is our success. We treat every project as a partnership, not a transaction.",
-    accent: "200 60% 45%",
+    accent: "25 95% 55%",
   },
   {
     icon: Award,
     title: "Excellence First",
     description: "We never cut corners. Every line of code, every pixel, every interaction is crafted with precision.",
-    accent: "33 100% 50%",
+    accent: "145 70% 45%",
   },
   {
     icon: Zap,
     title: "Innovation Led",
     description: "We stay ahead of the curve, adopting cutting-edge technologies to future-proof your products.",
-    accent: "280 60% 55%",
+    accent: "275 65% 50%",
   },
 ];
 
@@ -72,7 +72,7 @@ const AboutSection = () => {
     <section id="about" ref={sectionRef} className="py-32 bg-gradient-process relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: "linear-gradient(hsl(122,39%,49%) 1px, transparent 1px), linear-gradient(90deg, hsl(122,39%,49%) 1px, transparent 1px)",
+        backgroundImage: "linear-gradient(hsl(220, 80%, 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(220, 80%, 50%) 1px, transparent 1px)",
         backgroundSize: "80px 80px",
       }} />
       
@@ -81,13 +81,13 @@ const AboutSection = () => {
         className="absolute top-[10%] right-[5%] w-[600px] h-[600px] rounded-full pointer-events-none"
         animate={{ scale: [1, 1.15, 1], opacity: [0.03, 0.07, 0.03] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%,0.3), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220, 80%, 50%,0.3), transparent 70%)" }}
       />
       <motion.div
         className="absolute bottom-[20%] left-[-5%] w-[400px] h-[400px] rounded-full pointer-events-none"
         animate={{ scale: [1.1, 1, 1.1], opacity: [0.02, 0.05, 0.02] }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(145,63%,42%,0.2), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(275, 65%, 50%,0.2), transparent 70%)" }}
       />
 
       {/* Spinning ring decoration */}
@@ -238,7 +238,7 @@ const AboutSection = () => {
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0" style={{
-                  background: "linear-gradient(135deg, hsl(210,20%,8%,0.3) 0%, transparent 50%, hsl(122,39%,49%,0.1) 100%)",
+                  background: "linear-gradient(135deg, hsl(210,20%,8%,0.3) 0%, transparent 50%, hsl(220, 80%, 50%,0.1) 100%)",
                 }} />
               </div>
 
@@ -272,7 +272,7 @@ const AboutSection = () => {
 
               {/* Green glow behind image */}
               <div className="absolute -inset-4 rounded-3xl -z-10 blur-2xl opacity-20" style={{
-                background: "radial-gradient(circle, hsl(122,39%,49%,0.3), transparent 70%)",
+                background: "radial-gradient(circle, hsl(220, 80%, 50%,0.3), transparent 70%)",
               }} />
             </motion.div>
           </motion.div>
@@ -288,7 +288,7 @@ const AboutSection = () => {
         >
           {/* Background glow */}
           <div className="absolute inset-0 pointer-events-none" style={{
-            background: "linear-gradient(135deg, hsl(122,39%,49%,0.03), transparent 40%, hsl(145,63%,42%,0.02))",
+            background: "linear-gradient(135deg, hsl(220, 80%, 50%,0.03), transparent 40%, hsl(275, 65%, 50%,0.02))",
           }} />
           
           <div className="relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -303,8 +303,8 @@ const AboutSection = () => {
               >
                 <motion.div
                   className="h-12 w-12 rounded-xl mx-auto mb-4 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6"
-                  style={{ background: "hsl(122,39%,49%,0.1)" }}
-                  whileHover={{ boxShadow: "0 0 30px hsl(122,39%,49%,0.2)" }}
+                  style={{ background: "hsl(220, 80%, 50%,0.1)" }}
+                  whileHover={{ boxShadow: "0 0 30px hsl(220, 80%, 50%,0.2)" }}
                 >
                   <stat.icon className="h-5 w-5 text-primary" />
                 </motion.div>
@@ -342,7 +342,7 @@ const AboutSection = () => {
           {/* Timeline line */}
           <motion.div
             className="absolute left-6 sm:left-1/2 top-0 bottom-0 w-px"
-            style={{ background: "linear-gradient(180deg, hsl(122,39%,49%,0.4), hsl(122,39%,49%,0.05))" }}
+            style={{ background: "linear-gradient(180deg, hsl(220, 80%, 50%,0.4), hsl(220, 80%, 50%,0.05))" }}
             initial={{ scaleY: 0 }}
             whileInView={{ scaleY: 1 }}
             viewport={{ once: true }}

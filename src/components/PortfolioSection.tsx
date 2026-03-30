@@ -19,7 +19,7 @@ const projects = [
       { label: "Load Time", value: "0.8s" },
     ],
     tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
-    color: "122, 39%, 49%",
+    color: "220, 80%, 50%",
   },
   {
     image: projectRealestate,

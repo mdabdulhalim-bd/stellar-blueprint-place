@@ -11,7 +11,7 @@ const testimonials = [
     initials: "SM",
     metric: "+145%",
     metricLabel: "Revenue Growth",
-    accent: "122 39% 49%",
+    accent: "220, 80%, 50%",
   },
   {
     name: "James Rodriguez",
@@ -31,7 +31,7 @@ const testimonials = [
     initials: "AK",
     metric: "100%",
     metricLabel: "HIPAA Compliant",
-    accent: "160 50% 40%",
+    accent: "145, 70%, 45%",
   },
   {
     name: "David Chen",
@@ -101,20 +101,20 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="py-32 bg-gradient-process relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(122,39%,49%) 1px, transparent 0)",
+        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(220, 80%, 50%) 1px, transparent 0)",
         backgroundSize: "48px 48px",
       }} />
       <motion.div
         className="absolute top-1/3 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none"
         animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%,0.2), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220, 80%, 50%,0.2), transparent 70%)" }}
       />
       <motion.div
         className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none"
         animate={{ scale: [1.1, 1, 1.1], opacity: [0.03, 0.06, 0.03] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(145,63%,42%,0.15), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(275, 65%, 50%,0.15), transparent 70%)" }}
       />
 
       <div className="container relative z-10">

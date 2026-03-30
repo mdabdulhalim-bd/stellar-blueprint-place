@@ -172,7 +172,7 @@ const ContactSection = () => {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 leading-tight">
             Let's Build Something{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-primary via-emerald-400 to-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-blue-400 to-primary bg-clip-text text-transparent">
                 Extraordinary
               </span>
               <motion.div
@@ -209,7 +209,7 @@ const ContactSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + i * 0.1 }}
-                  whileHover={{ x: 8, borderColor: "hsl(122, 39%, 49%, 0.3)" }}
+                  whileHover={{ x: 8, borderColor: "hsl(220, 80%, 50%, 0.3)" }}
                 >
                   {/* Hover glow */}
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -302,7 +302,7 @@ const ContactSection = () => {
                   >
                     <div className="relative w-24 h-24 mx-auto mb-6">
                       <div className="absolute inset-0 rounded-full bg-primary/20 animate-ping" />
-                      <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-400 flex items-center justify-center">
+                      <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center">
                         <CheckCircle className="w-12 h-12 text-white" />
                       </div>
                     </div>
@@ -329,7 +329,7 @@ const ContactSection = () => {
                   {/* Progress bar */}
                   <div className="h-1 bg-white/[0.03]">
                     <motion.div
-                      className="h-full bg-gradient-to-r from-primary to-emerald-400"
+                      className="h-full bg-gradient-to-r from-primary to-blue-400"
                       initial={{ width: "0%" }}
                       animate={{ width: `${progress}%` }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -455,7 +455,7 @@ const ContactSection = () => {
                       <Button
                         type="submit"
                         disabled={loading}
-                        className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-emerald-500 hover:from-primary/90 hover:to-emerald-500/90 text-white shadow-[0_8px_32px_-4px_hsl(122,39%,49%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(122,39%,49%,0.5)] transition-all duration-300 border-0"
+                        className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-blue-500 hover:from-primary/90 hover:to-blue-500/90 text-white shadow-[0_8px_32px_-4px_hsl(220, 80%, 50%,0.4)] hover:shadow-[0_12px_40px_-4px_hsl(220, 80%, 50%,0.5)] transition-all duration-300 border-0"
                         size="lg"
                       >
                         {loading ? (

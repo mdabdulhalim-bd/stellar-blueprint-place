@@ -10,7 +10,7 @@ const services = [
     description: "Responsive, high-performance websites crafted for optimal user experience and built with modern frameworks.",
     tags: ["React", "Next.js", "WordPress"],
     number: "01",
-    accent: "122 39% 49%",
+    accent: "220, 80%, 50%",
     highlight: "500+ Sites Launched",
   },
   {
@@ -19,7 +19,7 @@ const services = [
     description: "Custom software solutions that are secure, scalable, and intuitive for streamlined operations.",
     tags: ["SaaS", "Enterprise", "API"],
     number: "02",
-    accent: "145 63% 42%",
+    accent: "275, 65%, 50%",
     highlight: "Enterprise Ready",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     description: "Native and cross-platform mobile applications delivering seamless iOS and Android experiences.",
     tags: ["React Native", "Flutter", "iOS"],
     number: "03",
-    accent: "160 50% 40%",
+    accent: "145, 70%, 45%",
     highlight: "4.9★ Avg Rating",
   },
   {
@@ -37,7 +37,7 @@ const services = [
     description: "Full-featured online stores with secure payments, inventory management, and optimized checkout.",
     tags: ["Shopify", "WooCommerce", "Custom"],
     number: "04",
-    accent: "33 100% 50%",
+    accent: "145 70% 45%",
     highlight: "+145% Revenue Avg",
   },
   {
@@ -46,7 +46,7 @@ const services = [
     description: "Data-driven strategies that boost visibility, drive organic traffic, and convert visitors.",
     tags: ["Technical SEO", "Analytics", "Growth"],
     number: "05",
-    accent: "200 60% 45%",
+    accent: "25 95% 55%",
     highlight: "Top 3 Rankings",
   },
   {
@@ -55,7 +55,7 @@ const services = [
     description: "Human-centered design balancing aesthetics with functionality to guide users effortlessly.",
     tags: ["Figma", "Prototyping", "Research"],
     number: "06",
-    accent: "280 60% 55%",
+    accent: "275 65% 50%",
     highlight: "Award Winning",
   },
 ];
@@ -303,13 +303,13 @@ const ServicesSection = () => {
         className="absolute top-20 right-[10%] w-[400px] h-[400px] rounded-full opacity-[0.04] pointer-events-none"
         animate={{ y: [-20, 20, -20], scale: [1, 1.05, 1] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220, 80%, 50%), transparent 70%)" }}
       />
       <motion.div
         className="absolute bottom-20 left-[5%] w-[350px] h-[350px] rounded-full opacity-[0.03] pointer-events-none"
         animate={{ y: [20, -20, 20], scale: [1.05, 1, 1.05] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        style={{ background: "radial-gradient(circle, hsl(145,63%,42%), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(275, 65%, 50%), transparent 70%)" }}
       />
       {/* Grid lines background */}
       <div className="absolute inset-0 opacity-[0.015]" style={{

@@ -9,7 +9,7 @@ const steps = [
     title: "Discovery",
     description: "We listen, research, and understand your goals, audience, and competitive landscape to build a solid foundation.",
     details: ["Stakeholder interviews", "Market research", "Competitor analysis", "Goal definition"],
-    color: "122 39% 49%",
+    color: "220, 80%, 50%",
   },
   {
     icon: Lightbulb,
@@ -17,7 +17,7 @@ const steps = [
     title: "Strategy & Design",
     description: "Wire-framing, prototyping, and UI/UX design that maps the optimal user journey for maximum impact.",
     details: ["Wireframes & mockups", "User flow mapping", "Brand alignment", "Prototype testing"],
-    color: "145 63% 42%",
+    color: "275, 65%, 50%",
   },
   {
     icon: Code2,
@@ -25,7 +25,7 @@ const steps = [
     title: "Development",
     description: "Agile sprints, clean code, and continuous integration for reliable, scalable, production-ready products.",
     details: ["Agile sprints", "Code reviews", "CI/CD pipeline", "Quality assurance"],
-    color: "160 50% 40%",
+    color: "145, 70%, 45%",
   },
   {
     icon: Rocket,
@@ -33,7 +33,7 @@ const steps = [
     title: "Launch & Support",
     description: "QA testing, deployment, performance monitoring, and ongoing maintenance to ensure long-term success.",
     details: ["Performance testing", "Cloud deployment", "24/7 monitoring", "Ongoing support"],
-    color: "33 100% 50%",
+    color: "145 70% 45%",
   },
 ];
 
@@ -44,11 +44,11 @@ const ProcessSection = () => {
     <section id="process" className="relative py-32 bg-gradient-process overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: "linear-gradient(hsl(122,39%,49%) 1px, transparent 1px), linear-gradient(90deg, hsl(122,39%,49%) 1px, transparent 1px)",
+        backgroundImage: "linear-gradient(hsl(220, 80%, 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(220, 80%, 50%) 1px, transparent 1px)",
         backgroundSize: "80px 80px"
       }} />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full opacity-10" style={{
-        background: "radial-gradient(circle, hsl(122,39%,49%,0.3) 0%, transparent 70%)"
+        background: "radial-gradient(circle, hsl(220, 80%, 50%,0.3) 0%, transparent 70%)"
       }} />
 
       <div className="container relative z-10">
