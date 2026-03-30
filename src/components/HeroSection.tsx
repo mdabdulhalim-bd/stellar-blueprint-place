@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Globe, Smartphone } from "lucide-react";
+import { ArrowRight, Code2, Globe, Smartphone, Award, ShieldCheck, BadgeDollarSign } from "lucide-react";
 import { Button } from "./ui/button";
 
 const textVariants = {
