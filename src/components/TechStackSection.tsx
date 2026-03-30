@@ -66,7 +66,7 @@ const TechStackSection = () => {
     <section className="py-32 bg-background overflow-hidden relative">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(122,39%,49%) 1px, transparent 0)",
+        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(220,80%,50%) 1px, transparent 0)",
         backgroundSize: "40px 40px"
       }} />
 
@@ -125,7 +125,7 @@ const TechStackSection = () => {
           <div className="relative rounded-3xl border border-border bg-card p-10 shadow-card overflow-hidden">
             {/* Decorative glow */}
             <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full opacity-20" style={{
-              background: "radial-gradient(circle, hsl(122,39%,49%,0.3), transparent 70%)"
+              background: "radial-gradient(circle, hsl(220,80%,50%,0.3), transparent 70%)"
             }} />
 
             <div className="relative z-10">

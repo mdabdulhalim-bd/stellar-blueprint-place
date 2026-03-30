@@ -42,14 +42,14 @@ const FAQSection = () => {
     <section id="faq" className="py-32 bg-gradient-process relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 opacity-[0.015]" style={{
-        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(122,39%,49%) 1px, transparent 0)",
+        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(220,80%,50%) 1px, transparent 0)",
         backgroundSize: "50px 50px",
       }} />
       <motion.div
         className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
         animate={{ opacity: [0.03, 0.06, 0.03] }}
         transition={{ duration: 8, repeat: Infinity }}
-        style={{ background: "radial-gradient(circle, hsl(122,39%,49%,0.2), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, hsl(220,80%,50%,0.2), transparent 70%)" }}
       />
 
       <div className="container relative z-10">
@@ -105,7 +105,7 @@ const FAQSection = () => {
                   {/* Number */}
                   <motion.span
                     className="text-sm sm:text-base font-mono font-bold shrink-0 mt-1 sm:mt-2 transition-colors duration-300"
-                    animate={{ color: isOpen ? "hsl(122,39%,49%)" : "hsl(210,10%,30%)" }}
+                    animate={{ color: isOpen ? "hsl(220,80%,50%)" : "hsl(210,10%,30%)" }}
                   >
                     {faq.number}
                   </motion.span>
@@ -141,8 +141,8 @@ const FAQSection = () => {
                   <motion.div
                     className="h-10 w-10 sm:h-12 sm:w-12 rounded-full flex items-center justify-center shrink-0 mt-1 transition-all duration-300 border"
                     animate={{
-                      backgroundColor: isOpen ? "hsl(122,39%,49%)" : "transparent",
-                      borderColor: isOpen ? "hsl(122,39%,49%)" : "hsl(210,20%,20%)",
+                      backgroundColor: isOpen ? "hsl(220,80%,50%)" : "transparent",
+                      borderColor: isOpen ? "hsl(220,80%,50%)" : "hsl(210,20%,20%)",
                       rotate: isOpen ? 180 : 0,
                     }}
                     transition={{ duration: 0.3 }}
